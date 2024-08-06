@@ -1,0 +1,149 @@
+/* Variables */
+:root {
+  --primary-bg: #333;
+  --primary-color: #fff;
+  --secondary-bg: #f0f0f0;
+  --link-color: #007bff;
+  --font-family: Arial, sans-serif;
+  --font-size-base: 1rem;
+  --font-size-large: 2rem;
+  --font-size-medium: 1.5rem;
+}
+
+/* Reset and basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  background-color: var(--secondary-bg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header__title {
+  font-size: var(--font-size-large);
+  margin-bottom: 10px;
+}
+
+.header__nav-list {
+  list-style-type: none;
+}
+
+.header__nav-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.header__nav-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: var(--font-size-medium);
+}
+
+.header__nav-link:hover {
+  color: var(--link-color);
+}
+
+.section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section__title {
+  font-size: var(--font-size-large);
+  margin-bottom: 20px;
+}
+
+.section__description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.service {
+  background-color: var(--primary-color);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.service__title {
+  font-size: var(--font-size-medium);
+  margin-bottom: 10px;
+}
+
+.service__description {
+  line-height: 1.6;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form__label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form__button {
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form__button:hover {
+  background-color: #555;
+}
+
+.footer {
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer__text {
+  margin: 0;
+}
